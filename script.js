@@ -1,5 +1,5 @@
-    let parentContainer = document.body;
-    var container_div = document.createElement("div");
+   let parentContainer = document.body;
+   var container_div = document.createElement("div");
     container_div.setAttribute("class", "container");
 
     var h=document.createElement("h1");
@@ -47,7 +47,7 @@
                     "d-flex",
                     "justify-content-center",
                 );
-                card_header.setAttribute("style","background-color: #ffffff");
+                card_header.setAttribute("style","background-color: #0cc5f8");
                 card_header.textContent = name;
 
                 // To create the Card body
@@ -98,6 +98,11 @@
                 parentContainer = container_div;
             });
 
+            // Add the footer
+            var footer = document.createElement("footer");
+            footer.textContent = "Designed by Aishwarya";
+            footer.setAttribute("class", "text-center mt-4");
+            document.body.appendChild(footer);
         });
 
     function fetch_data(lat,lng)
